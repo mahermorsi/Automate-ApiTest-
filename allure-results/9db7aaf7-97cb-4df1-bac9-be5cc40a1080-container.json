@@ -1,0 +1,1 @@
+{"uuid":"9db7aaf7-97cb-4df1-bac9-be5cc40a1080","name":"shuffleDeckCardsTest()","children":["6baf1a0e-95f8-4a58-9241-0afab8143314"],"befores":[{"name":"beforeAll","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1702308334775,"stop":1702308334953}],"afters":[],"start":1702308334773,"stop":1702308335149}

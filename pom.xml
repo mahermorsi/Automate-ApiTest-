@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>infrastructure</groupId>
+    <artifactId>AutomateAPI_DeckOfCards</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <allure.version>2.24.0</allure.version>
+        <aspectj.version>1.9.20.1</aspectj.version>
+    </properties>
+
+    <!-- Add allure-bom to dependency management to ensure correct versions of all the dependencies are used -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-bom</artifactId>
+                <version>${allure.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    <dependencies>
+        <!-- Your existing dependencies -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.8.1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Jackson dependencies -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.16.0</version> <!-- Use the latest version -->
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.16.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.16.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-junit5</artifactId>
+            <version>2.25.0</version> <!-- Check for the latest version on the Allure website -->
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.32</version>
+        </dependency>
+
+        <!-- Logback Implementation -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.9</version>
+        </dependency>
+    </dependencies>
+    <!-- Add the following options to your maven-surefire-plugin -->
+</project>
